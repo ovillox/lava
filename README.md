@@ -19,11 +19,13 @@ Your Node Name
 Port prefix
 
 199
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf lava
 git clone https://github.com/lavanet/lava
 cd lava
 git checkout v3.1.0
+```
 
 # Build binary
 export LAVA_BINARY=lavad
