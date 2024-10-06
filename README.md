@@ -22,9 +22,11 @@ cd lava
 git checkout v3.1.0
 ```
 
-# Build binary
+**Build binary**
+```
 export LAVA_BINARY=lavad
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.lava/cosmovisor/genesis/bin
