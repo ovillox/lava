@@ -28,10 +28,12 @@ export LAVA_BINARY=lavad
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.lava/cosmovisor/genesis/bin
 sudo ln -s $HOME/.lava/cosmovisor/genesis $HOME/.lava/cosmovisor/current -f
 sudo ln -s $HOME/.lava/cosmovisor/current/bin/lavad /usr/local/bin/lavad -f
+```
 
 # Move binary to cosmovisor directory
 mv $(which lavad) $HOME/.lava/cosmovisor/genesis/bin
