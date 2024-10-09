@@ -35,8 +35,10 @@ sudo ln -s $HOME/.lava/cosmovisor/genesis $HOME/.lava/cosmovisor/current -f
 sudo ln -s $HOME/.lava/cosmovisor/current/bin/lavad /usr/local/bin/lavad -f
 ```
 
-# Move binary to cosmovisor directory
+**Move binary to cosmovisor directory**
+```
 mv $(which lavad) $HOME/.lava/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 lavad config chain-id lava-mainnet-1
