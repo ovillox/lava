@@ -47,8 +47,10 @@ lavad config keyring-backend file
 lavad config node tcp://localhost:19957
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 lavad init "Your Node Name" --chain-id lava-mainnet-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/lava/genesis.json > $HOME/.lava/config/genesis.json
