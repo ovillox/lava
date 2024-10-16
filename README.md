@@ -63,8 +63,10 @@ curl -L https://snapshots.nodejumper.io/lava/addrbook.json > $HOME/.lava/config/
 sed -i -e 's|^seeds *=.*|seeds = "e023c3892862744081360a99a2666e8111b196d3@lava-seed.y2.finance:26656,810b95bb95de712d4f30c2f62738bd976c016831@lava-seed.finteh.org:26656,cec848e7d4c5a7ae305b27cda133d213435c110f@seed-lava.ibs.team:16680,a5e5e2971721803e2297c870adacb234a724fc87@seed-lava.r93axnodes.cloud:8256,258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.lava-mainnet-1.lava.aviaone.com:10291,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,b9dfd3f222e65ae605efc29dc9e3faecdc3b71d0@lava.seed.stavr.tech:197,b85358e035343a3b15e77e1102857dcdaf70053b@seeds.bluestake.net:29956,ebc272824924ea1a27ea3183dd0b9ba713494f83@lava-mainnet-seed.autostake.com:27066,6086779c98b6864aea1ae595b96a412aa11ec6c7@lava.seed.stakevillage.net:17760"|' $HOME/.lava/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.00002ulava"|' $HOME/.lava/config/app.toml
+```
 
 # Set pruning
 sed -i \
