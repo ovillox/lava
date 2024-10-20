@@ -88,8 +88,10 @@ sed -i -e "s%:26658%:19958%; s%:26657%:19957%; s%:6060%:19960%; s%:26656%:19956%
 curl "https://snapshots.nodejumper.io/lava/lava_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.lava"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/lava.service > /dev/null << EOF
