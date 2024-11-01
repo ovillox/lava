@@ -171,13 +171,15 @@ sudo systemctl restart sshd
 sudo apt install -y fail2ban
 ```
 
-# install and configure firewall
+**install and configure firewall**
+```
 sudo apt install -y ufw
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
 sudo ufw allow ssh
 sudo ufw allow 9100
 sudo ufw allow 26656
+```
 
 # make sure you expose ALL necessary ports, only after that enable firewall
 sudo ufw enable
