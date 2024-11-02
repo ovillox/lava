@@ -181,8 +181,10 @@ sudo ufw allow 9100
 sudo ufw allow 26656
 ```
 
-# make sure you expose ALL necessary ports, only after that enable firewall
+**make sure you expose ALL necessary ports, only after that enable firewall**
+```
 sudo ufw enable
+```
 
 # make terminal colorful
 sudo su - admin
