@@ -186,9 +186,11 @@ sudo ufw allow 26656
 sudo ufw enable
 ```
 
-# make terminal colorful
+**make terminal colorful**
+```
 sudo su - admin
 source <(curl -s https://raw.githubusercontent.com/nodejumper-org/cosmos-scripts/master/utils/enable_colorful_bash.sh)
+```
 
 # update servername, if needed, replace YOUR_SERVERNAME with wanted server name
 sudo hostnamectl set-hostname YOUR_SERVERNAME
